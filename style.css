@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  word-wrap: break-word;
+}
+
+/* Kakao Main */
+#kaKaoMain {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Kakao Content */
+#kakaoContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 109px 0 99px;
+}
+
+.wrap_banner {
+  width: 540px;
+  margin: 37px 40px 0 0;
+}
+
+.wrap_banner .info_banner {
+  padding: 16px 9px 20px;
+} 
+
+.wrap_banner .title_banner {
+  font-size: 25px;
+  line-height: 32px;
+  color: #252525;
+  font-weight: 400;
+}
+
+.wrap_banner .desc_banner {
+  font-size: 13px;
+  color: #7c7c7c;
+  line-height: 18px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.wrap_banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap-form {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 70px;
+  font-size: 16px;
+  border: 1px solid #e5e5e5;
+  text-align: left;
+}
+
+.form_header {
+  margin-bottom: 30px;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 34px;
+}
+
+.form-control {
+  border: none;
+  outline: none;
+  max-width: 420px;
+  width: 100%;
+  height: 48px;
+  border-bottom: 2px solid #ebebeb;
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e8e8e;
+  cursor: pointer;
+}
+
+.form-control:focus {
+  border-bottom: 2px solid #262626;
+}
+
+/* Chang placeholder color */
+::placeholder {
+  color: #8e8e8e;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #8e8e8e;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #8e8e8e;
+}
+
+.set_login {
+  margin-top: 25px;
+  display: flex;
+}
+
+.set_login .form-control {
+  appearance: none;
+  border: none;
+  width: 28px;
+  height: 20px;
+}
+
+.set_login_icon {
+  position: absolute;
+  color: #fbdd0d;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.set_login .stay_label {
+  font-size: 14px;
+  color: #252525;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.wrap_btn {
+  margin-top: 40px;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 4px;
+  font-weight: 500;
+  background-color: rgb(0,0,0,0.06);
+  cursor: pointer;
+
+}
+
+.wrap_btn .submit-form {
+  background-color: #fee500;
+}
+
+.wrap_btn .line_or {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.wrap_btn .line_or::after, .wrap_btn .line_or::before {
+  display: inline-block;
+  width: calc(50% - 20px);
+  height: 1px;
+  background-color: rgba(0,0,0,0.06);
+  margin: 8px 0;
+  content: '';
+  vertical-align: top;
+}
+
+.wrap_btn .line_or span {
+  display: inline-block;
+  width: 40px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: 600;
+  color: rgba(0,0,0,0.3);
+}
+
+.wrap_btn .login_qr:hover {
+  background-color: #e7e7e7;
+}
+
+.wrap_btn .login_qr i {
+  margin: 4px 7px 0 0;
+  font-size: 16px;
+}
+
+.info_user {
+margin-top: 30px;
+font-size: 12px; 
+}
+
+.list_user {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.list_user li:first-child {
+  flex-grow: 1;
+}
+
+.list_user li:nth-child(2)::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 0 10px;
+  background-color: #e5e5e5;
+}
+
+.list_user li a {
+  color: rgba(0,0,0,0.7);
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Kakao Footer */
+#kakaoFooter {
+  padding: 20px 0 110px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e5e5e5;
+}
+
+#kakaoFooter .service_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#kakaoFooter .service_info div {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+#kakaoFooter .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #7c7c7c;
+  /* line-height: 18px; */
+  gap: 4px;
+}
+
+#kakaoFooter a {
+  display: inline-block;
+  font-size: 12px;
+  color: #4c4c4c;
+  line-height: 18px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#kakaoFooter .copyright a {
+  font-weight: 800;
+  font-size: 11px;
+  color: #7c7c7c;
+}
+
+#kakaoFooter .service_info div:nth-child(2) a {
+  font-weight: 800;
+}
+
+#kakaoFooter i {
+  margin-left: 4px;
+  font-size: 12px;
+  color: #4c4c4c;
+  vertical-align:middle;
+}
+
+/* Media queries */
+/* Mobile */
+@media screen and (max-width: 36.25em) {
+  #kakaoContent {
+    padding: 50px 20px 139px;
+  }
+
+  .wrap-form {
+    padding: 0;
+    border: 0;
+  }
+
+  .form_header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  } 
+
+  #kakaoFooter {
+    padding: 14px 0 15px;
+    margin-top: 46px;
+  }
+  
+  #kakaoFooter .service_info {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  #kakaoFooter a  {
+    padding: 0 5px;
+  }
+
+  #kakaoFooter .copyright {
+    gap: 0;
+  }
+
+  #kakaoFooter .copyright a {
+    padding: 0 3px;
+  }
+}
+
+/* Mobile and Tablet */
+@media screen and (max-width: 63.9375em) {
+  .wrap_banner {
+    display: none;
+  }
+}
+
+/* PC large screen */
+@media screen and (max-width: 78.125em) {
+  .wrap-form {
+    max-width: 420px;
+  }
+
+  .wrap_banner {
+    margin-right: 0px;
+  }
+}
